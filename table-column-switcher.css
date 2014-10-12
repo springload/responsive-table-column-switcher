@@ -1,0 +1,26 @@
+body {
+	margin: 0 auto;
+	padding: 3em 1.5em;
+	max-width: 32em;
+
+	background: #fff;
+	color: #555;
+
+	font: 1em/1.5 sans-serif;
+	text-align: center;
+}
+
+.text-left { text-align:left; }
+table { width:100%; border-collapse:collapse; }
+tr { border-top:1px solid #ccc; }
+th, td { text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+
+
+.column-switcher {}
+.column-switcher__hidden { display: none; }
+
+@media(min-width:40em) {
+  td.column-switcher__hidden, th.column-switcher__hidden { display: table-cell; }
+  .column-switcher__select-cell { display: none; }
+}
